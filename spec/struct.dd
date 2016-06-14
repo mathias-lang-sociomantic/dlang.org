@@ -414,6 +414,16 @@ $(SECTION3 $(LEGACY_LNAME2 Struct-Constructor, struct-constructor, Struct Constr
         ------
 )
 
+$(SECTION3 $(LEGACY_LNAME2 StructDestructor, struct-destructor, Struct Destructors),
+
+        $(P Destructors are called when an object goes out of scope.
+        Their purpose is to free up resources owned by the struct
+        object.
+        )
+
+        $(P Unions may not have fields that have destructors.)
+)
+
 $(SECTION3 $(LEGACY_LNAME2 StructPostblit, struct-postblit, Struct Postblits),
 
 $(GRAMMAR
@@ -473,16 +483,6 @@ $(GNAME Postblit):
         ---
 
         $(P Unions may not have fields that have postblits.)
-)
-
-$(SECTION3 $(LEGACY_LNAME2 StructDestructor, struct-destructor, Struct Destructors),
-
-        $(P Destructors are called when an object goes out of scope.
-        Their purpose is to free up resources owned by the struct
-        object.
-        )
-
-        $(P Unions may not have fields that have destructors.)
 )
 
 $(SECTION3 $(LEGACY_LNAME2 AssignOverload, assign-overload, Identity Assignment Overload),
